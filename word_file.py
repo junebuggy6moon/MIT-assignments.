@@ -1,0 +1,1 @@
+all_the_words = ["gucci", "prada", "marni", "chanel", "fendi"]
