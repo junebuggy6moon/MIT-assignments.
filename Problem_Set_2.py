@@ -11,9 +11,9 @@ print("Let's play hangman!")
 
 word = generate_random_word(all_the_words)
 display_word = [] # for the game when filled game over
-dash = list(word) # convert an iterable string into a list.
+word_array = list(word) # convert an iterable string into a list.
 
-for each in dash:
+for each in word_array:
     display_word.append("_")
 
 word_length = len(word)
