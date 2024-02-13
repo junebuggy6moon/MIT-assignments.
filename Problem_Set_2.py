@@ -24,6 +24,9 @@ while word_length != 0 and user_letter != "exit":
     print(" ".join(display_word))
     user_letter = input("Please guess a letter: ")
 
+    if len(user_letter.upper())>1:
+        print("You should only guess a single letter! Try again!")
+
     if user_letter.upper() in guessed_list:
         print("You had already guessed that letter! Try again!")
     else:
@@ -37,7 +40,7 @@ if user_letter == "exit":
     print("Thanks for playing! see you next time!")
 else:
     print(" ".join(user_letter))
-    print("Congratulations! You guessed the word!")
+    print(f"Congratulations! You guessed the word! It was {word}")
 
 
 
